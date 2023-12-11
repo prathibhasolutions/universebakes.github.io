@@ -785,7 +785,7 @@ section {
 # Stats Counter Section
 --------------------------------------------------------------*/
 .stats-counter {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/stats-bg2.jpg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/stats-bg.jpg") center center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -817,7 +817,106 @@ section {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/*--------------------------------------------------------------
+# Menu Section
+--------------------------------------------------------------*/
+.menu .nav-tabs {
+  border: 0;
+}
 
+.menu .nav-link {
+  margin: 0 10px;
+  padding: 10px 5px;
+  transition: 0.3s;
+  color: var(--color-secondary);
+  border-radius: 0;
+  cursor: pointer;
+  height: 100%;
+  border: 0;
+  border-bottom: 2px solid #b6b6bf;
+}
+
+@media (max-width: 575px) {
+  .menu .nav-link {
+    margin: 0 10px;
+    padding: 10px 0;
+  }
+}
+
+.menu .nav-link i {
+  padding-right: 15px;
+  font-size: 48px;
+}
+
+.menu .nav-link h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  font-family: var(--font-secondary);
+}
+
+@media (max-width: 575px) {
+  .menu .nav-link h4 {
+    font-size: 16px;
+  }
+}
+
+.menu .nav-link:hover {
+  color: var(--color-primary);
+}
+
+.menu .nav-link.active {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.menu .tab-content .tab-header {
+  padding: 30px 0;
+}
+
+.menu .tab-content .tab-header p {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #676775;
+  margin-bottom: 0;
+}
+
+.menu .tab-content .tab-header h3 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.menu .tab-content .menu-item {
+  -moz-text-align-last: center;
+  text-align-last: center;
+}
+
+.menu .tab-content .menu-item .menu-img {
+  padding: 0 60px;
+  margin-bottom: 15px;
+}
+
+.menu .tab-content .menu-item h4 {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  font-family: var(--font-secondary);
+  font-weight: 30px;
+  margin-bottom: 5px;
+}
+
+.menu .tab-content .menu-item .ingredients {
+  font-family: var(--font-secondary);
+  color: #8d8d9b;
+  margin-bottom: 5px;
+}
+
+.menu .tab-content .menu-item .price {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
 
 /*--------------------------------------------------------------
 # Testimonials Section
@@ -912,7 +1011,7 @@ section {
 
 .events .event-item {
   background-size: cover;
-  background-position: center;
+  background-position: cente;
   min-height: 600px;
   padding: 30px;
 }
@@ -1554,101 +1653,6 @@ section {
 .footer .credits a {
   color: #fff;
 }
-
-/*--------------------------------------------------------------
-# Menu Section
---------------------------------------------------------------*/
-.menu #menu-flters {
-  padding: 0;
-  margin: 0 auto 0 auto;
-  list-style: none;
-  text-align: center;
-  border-radius: 50px;
-}
-
-.menu #menu-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 8px 12px 10px 12px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1;
-  color: Black;
-  margin-bottom: 10px;
-  transition: all ease-in-out 0.3s;
-  border-radius: 50px;
-  font-family: "Playfair Display", serif;
-}
-
-.menu #menu-flters li:hover,
-.menu #menu-flters li.filter-active {
-  color: var(--color-primary);
-}
-
-.menu #menu-flters li:last-child {
-  margin-right: 0;
-}
-
-.menu .menu-item {
-  margin-top: 50px;
-}
-
-.menu .menu-img {
-  width: 70px;
-  border-radius: 50%;
-  float: left;
-  border: 2px solid var(--color-primary);
-}
-
-.menu .menu-content {
-  margin-left: 85px;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-
-.menu .menu-content::after {
-  content: ".................................." "..................................................";
-  position: absolute;
-  left: 20px;
-  right: 0;
-  top: -4px;
-  z-index: 1;
-  color: #bab3a6;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-.menu .menu-content a {
-  padding-right: 5px;
-  background: rgb(240,240,240);
-  position: relative;
-  z-index: 3;
-  font-weight: 700;
-  color:black;
-  transition: 0.3s;
-}
-
-.menu .menu-content a:hover {
-  color: var(--color-primary);
-}
-
-.menu .menu-content span {
-  background: None;
-  position: relative;
-  z-index: 3;
-  padding: 0 10px;
-  font-weight: 600;
-  color: var(--color-primary);
-}
-
-.menu .menu-ingredients {
-  margin-left: 85px;
-  font-style: italic;
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-  color: var(--color-primary);
-}
 /*--------------------------------------------------------------
 # Menu Section
 --------------------------------------------------------------*/
@@ -1749,5 +1753,3 @@ section {
   font-weight: 700;
   color: var(--color-primary);
 }
-
-
